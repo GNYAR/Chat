@@ -9,7 +9,11 @@ import ErrorPage from "./pages/ErrorPage";
 
 const router = createBrowserRouter([
   {
-    path: "/account",
+    path: "/",
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "account",
     element: <Account />,
     errorElement: <ErrorPage />,
   },
